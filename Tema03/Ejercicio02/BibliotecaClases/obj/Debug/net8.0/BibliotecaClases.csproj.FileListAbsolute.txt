@@ -1,0 +1,12 @@
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\bin\Debug\net8.0\BibliotecaClases.deps.json
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\bin\Debug\net8.0\BibliotecaClases.dll
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\bin\Debug\net8.0\BibliotecaClases.pdb
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\BibliotecaClases.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\BibliotecaClases.AssemblyInfoInputs.cache
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\BibliotecaClases.AssemblyInfo.cs
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\BibliotecaClases.csproj.CoreCompileInputs.cache
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\BibliotecaClases.sourcelink.json
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\BibliotecaClases.dll
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\refint\BibliotecaClases.dll
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\BibliotecaClases.pdb
+C:\Users\jlmejorada\Desktop\Repositorios\DI\Ejercicio02\BibliotecaClases\obj\Debug\net8.0\ref\BibliotecaClases.dll

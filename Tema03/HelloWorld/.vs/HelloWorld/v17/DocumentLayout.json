@@ -1,0 +1,53 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\jlmejorada\\Desktop\\Repositorios\\DI\\HelloWorld\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8A1C69-C673-459E-80DF-68A4716828FB}|HelloWorld\\HelloWorld.csproj|c:\\users\\jlmejorada\\desktop\\repositorios\\di\\helloworld\\helloworld\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{FC8A1C69-C673-459E-80DF-68A4716828FB}|HelloWorld\\HelloWorld.csproj|solutionrelative:helloworld\\mainpage.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{FC8A1C69-C673-459E-80DF-68A4716828FB}|HelloWorld\\HelloWorld.csproj|C:\\Users\\jlmejorada\\Desktop\\Repositorios\\DI\\HelloWorld\\HelloWorld\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{FC8A1C69-C673-459E-80DF-68A4716828FB}|HelloWorld\\HelloWorld.csproj|solutionrelative:HelloWorld\\MainPage.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainPage.xaml",
+              "DocumentMoniker": "C:\\Users\\jlmejorada\\Desktop\\Repositorios\\DI\\HelloWorld\\HelloWorld\\MainPage.xaml",
+              "RelativeDocumentMoniker": "HelloWorld\\MainPage.xaml",
+              "ToolTip": "C:\\Users\\jlmejorada\\Desktop\\Repositorios\\DI\\HelloWorld\\HelloWorld\\MainPage.xaml",
+              "RelativeToolTip": "HelloWorld\\MainPage.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-09-30T12:07:31.069Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainPage.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\jlmejorada\\Desktop\\Repositorios\\DI\\HelloWorld\\HelloWorld\\MainPage.xaml.cs",
+              "RelativeDocumentMoniker": "HelloWorld\\MainPage.xaml.cs",
+              "ToolTip": "C:\\Users\\jlmejorada\\Desktop\\Repositorios\\DI\\HelloWorld\\HelloWorld\\MainPage.xaml.cs",
+              "RelativeToolTip": "HelloWorld\\MainPage.xaml.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAACsAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-09-25T11:44:15.245Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
