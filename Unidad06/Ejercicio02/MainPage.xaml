@@ -1,0 +1,20 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio02.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            x:Name="slider"
+            Padding="30,0"
+            Spacing="25">
+
+            <Slider Margin="20" Minimum="0" Maximum="1" x:Name="deslizador" />
+
+            <ProgressBar Progress="{Binding Source={x:Reference deslizador}, Path = Value}"/>
+            <!--<ProgressBar BindingContext="{x:Reference deslizador}" Progress="{Binding Value}" />-->
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

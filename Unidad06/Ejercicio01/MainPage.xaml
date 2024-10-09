@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Ejercicio01.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            x:Name="botones"
+            Padding="30,0"
+            Spacing="25">
+
+            <Button x:Name="boton1" FontAttributes="Bold" Text="Botón1" BorderColor="black" FontFamily="Verdana" FontSize="16"
+                    BorderWidth="3" BackgroundColor="OrangeRed" MaximumWidthRequest="200" MaximumHeightRequest="70" Margin="5"/>
+
+            <Button x:Name="boton2" Clicked="cuandoClicasBoton2">
+                <Button.Text>Botón2</Button.Text>
+                <Button.FontFamily>Verdana</Button.FontFamily>
+                <Button.FontSize>16</Button.FontSize>
+                <Button.BorderWidth>3</Button.BorderWidth>
+                <Button.BackgroundColor>violet</Button.BackgroundColor>
+                <Button.BorderColor>Black</Button.BorderColor>
+                <Button.FontAttributes>Bold</Button.FontAttributes>
+                <Button.MaximumWidthRequest>200</Button.MaximumWidthRequest>
+                <Button.MaximumHeightRequest>70</Button.MaximumHeightRequest>
+                <Button.Margin>5</Button.Margin>
+            </Button>
+            
+            
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
