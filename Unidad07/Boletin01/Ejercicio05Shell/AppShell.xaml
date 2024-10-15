@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Ejercicio05Shell.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:Ejercicio05Shell.Views"
+    Shell.FlyoutBehavior="Flyout"
+    Title="Ejercicio05Shell">
+
+    <Shell.FlyoutHeaderTemplate>
+        <DataTemplate>
+            <Grid BackgroundColor="Black"
+              HeightRequest="200">
+                <Image Aspect="AspectFill"
+                   Source="brandon.jpg"
+                   Opacity="0.4" />
+                <Label Text="Brandon Sanderson"
+                   TextColor="White"
+                   FontAttributes="Bold"
+                   HorizontalTextAlignment="Center"
+                   VerticalTextAlignment="Center" />
+            </Grid>
+        </DataTemplate>
+    </Shell.FlyoutHeaderTemplate>
+    <FlyoutItem FlyoutDisplayOptions="AsMultipleItems">
+        <Tab Title="Cosmere"
+             Icon="cosmere.png">
+            <ShellContent Title="El Archivo de las Tormentas"
+                          Icon="archivo.png"
+                          ContentTemplate="{DataTemplate local:sla}" />
+            <ShellContent Title="Nacidos de la Bruma"
+                          Icon="bruma.png"
+                          ContentTemplate="{DataTemplate local:mb}" />
+        </Tab>
+        <ShellContent Title="Citoverso"
+                      Icon="cito.png"
+                      ContentTemplate="{DataTemplate local:citonic}" />
+    </FlyoutItem>
+    <ShellContent Title="About"
+              Icon="info.png"
+              ContentTemplate="{DataTemplate local:informacion}" />
+    <ShellContent Title="Ajustes"
+              Icon="sett.png"
+              ContentTemplate="{DataTemplate local:setting}" />
+</Shell>
