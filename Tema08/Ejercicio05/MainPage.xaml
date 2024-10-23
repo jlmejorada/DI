@@ -2,20 +2,43 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Ejercicio05.MainPage">
+    <Grid>
+        <ScrollView>
+            <ListView x:Name="PersonaListView" SeparatorVisibility="None" HasUnevenRows="False" RowHeight="100" ItemsSource="{Binding Persona}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Label Text="{Binding Nombre}" FontAttributes="Bold" />
+                                <Label Text="{Binding Apellido}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+        <AbsoluteLayout>
+            <ImageButton 
+                Source="edit.png" 
+                BackgroundColor="LightBlue"
+                CornerRadius="80"
+                AbsoluteLayout.LayoutFlags="PositionProportional"  
+                AbsoluteLayout.LayoutBounds=".95,.71,60,60" />
 
-    <ScrollView>
-        <ListView x:Name="PersonaListView" ItemsSource="{Binding Persona}">
-            <ListView.ItemTemplate>
-                <DataTemplate>
-                    <ViewCell>
-                        <StackLayout Orientation="Vertical" Padding="10">
-                            <Label Text="{Binding Nombre}" FontAttributes="Bold" />
-                            <Label Text="{Binding Apellido}" />
-                        </StackLayout>
-                    </ViewCell>
-                </DataTemplate>
-            </ListView.ItemTemplate>
-        </ListView>
-    </ScrollView>
+            <ImageButton 
+                Source="delete.png"
+                BackgroundColor="LightBlue"
+                CornerRadius="80"
+                AbsoluteLayout.LayoutFlags="PositionProportional"  
+                AbsoluteLayout.LayoutBounds=".95,.83,60,60" />
 
+            <ImageButton 
+                Source="add.png" 
+                BackgroundColor="LightBlue"
+                CornerRadius="80"
+                AbsoluteLayout.LayoutFlags="PositionProportional"  
+                AbsoluteLayout.LayoutBounds=".95,.95,60,60" />      
+        </AbsoluteLayout>
+        
+    </Grid>
 </ContentPage>
