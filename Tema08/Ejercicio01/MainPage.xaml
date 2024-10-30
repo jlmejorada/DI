@@ -5,19 +5,19 @@
 
     <ScrollView>
         <Border Stroke="BlueViolet" StrokeThickness="10" StrokeShape="RoundRectangle 40,40,0,0">
-            <VerticalStackLayout Padding="80" HorizontalOptions="Center" VerticalOptions="Center">
-                <Button Margin="10" Text="Botón 1" WidthRequest="120">
+            <VerticalStackLayout Padding="20" VerticalOptions="Center" HorizontalOptions="Center">
+                <Button Margin="10" Text="Botón 1" BorderColor="Black" BorderWidth="3">
 
                 </Button>
-                <Button Margin="10" Text="Botón 2" WidthRequest="120">
+                <Button Margin="10" Text="Botón 2" >
 
                 </Button>
-                <Button Margin="10" Text="Botón 3" WidthRequest="120">
+                <Button Margin="10" Text="Botón 3" >
 
                 </Button>
                 <HorizontalStackLayout Margin="10">
-                    <Label FontAttributes="Bold" Text="Nombre: "/>
-                    <Entry BackgroundColor="AliceBlue" WidthRequest="300"></Entry>
+                    <Label FontAttributes="Bold" Text="Nombre: " Padding="10"/>
+                    <Entry BackgroundColor="AliceBlue" MinimumWidthRequest="120"></Entry>
                 </HorizontalStackLayout>
             </VerticalStackLayout>
         </Border>
