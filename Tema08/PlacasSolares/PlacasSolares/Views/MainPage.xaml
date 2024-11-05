@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="PlacasSolares.Views.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="Center">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center" Spacing="20">
+                <Label Text="Placas Solares Ramon and Co"
+                       FontSize="24"
+                       TextColor="Black"
+                       VerticalOptions="Center"
+                       HorizontalOptions="Start"
+                       Grid.Column="0" 
+                       Padding="40"/>
+                
+                <Image Source="telet.jpeg" 
+                       Aspect="AspectFill" 
+                       WidthRequest="250"/>
+
+                <Entry x:Name="usuarioEntry" 
+                       Placeholder="Usuario" 
+                       WidthRequest="300" 
+                       HorizontalOptions="Center"/>
+
+                <Entry x:Name="contrasenaEntry" 
+                       Placeholder="Contraseña" 
+                       IsPassword="True" 
+                       WidthRequest="300" 
+                       HorizontalOptions="Center"/> 
+
+                <Button Text="Iniciar" 
+                        WidthRequest="300" 
+                        HorizontalOptions="Center" 
+                        Clicked="OnLoginClicked"
+                        BackgroundColor="MediumPurple"/>
+            </StackLayout>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:vmodel="clr-namespace:PlacasSolares.ViewModel"
+             x:Class="PlacasSolares.Views.ListadoCitas">
+    
+    <Shell.BackButtonBehavior>
+        <BackButtonBehavior IsVisible="False" IsEnabled="False" />
+    </Shell.BackButtonBehavior>
+    
+    <ContentPage.BindingContext>
+        <vmodel:ListadoCitasVM/>
+    </ContentPage.BindingContext>
+    
+    <StackLayout>
+        <Grid Padding="20" BackgroundColor="MediumPurple" HeightRequest="90">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto" />
+                <ColumnDefinition Width="*" />
+            </Grid.ColumnDefinitions>
+
+            <Button Text="Atras"
+                BorderColor="White"
+                BorderWidth="1"
+                BackgroundColor="Transparent"
+                HorizontalOptions="Start"
+                VerticalOptions="Center"
+                Clicked="OnLogoutClicked"
+                Grid.Column="0"/>
+            
+            <Label Text="Ramon and Co"
+               FontAttributes="Bold"
+               FontSize="24"
+               TextColor="White"
+               VerticalOptions="Center"
+               HorizontalOptions="End"
+               Grid.Column="1" />
+
+            
+        </Grid>
+        <Label Text="Fernando, no se porque no sale mi lista, me falta algo supongo :("
+           FontSize="18"
+           TextColor="Black"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           Grid.Column="1" />
+        
+        <Button Text="Siguiente página"
+            BorderWidth="1"
+            BackgroundColor="MediumPurple"
+            HorizontalOptions="Start"
+            VerticalOptions="Center"
+            Clicked="OnSiguientePag"
+            Grid.Column="0"/>   
+
+        <ScrollView>
+            <ListView x:Name="CitaListView" RowHeight="100" ItemsSource="{Binding Citas}">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                        <ViewCell>
+                            <StackLayout Orientation="Vertical" Padding="10">
+                                <Label Text="{Binding Id}" FontAttributes="Bold" />
+                                <Label Text="{Binding Cliente}" />
+                                <Label Text="{Binding Fecha}" />
+                                <Label Text="{Binding Hora}" />
+                            </StackLayout>
+                        </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
+            </ListView>
+        </ScrollView>
+
+    </StackLayout>
+</ContentPage>
