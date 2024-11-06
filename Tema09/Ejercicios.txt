@@ -1,0 +1,20 @@
+EJ1 .- Una vista que muestre un listado de personas. El listado consta del Nombre, apellidos y un check que indica si esa persona es mayor de edad o no. Ese check no podrá ser modificado por el usuario.
+
+
+MODELS	ENT	Persona	
+			+ int ID { get; }
+			+ String Nombre { get; set; }
+			+ String Apellidos { get; set; }
+			+ DateTime FechaNac { get; set; }
+
+			+ Persona()
+			+ Persona(Nombre, Apellidos, FechaNac)
+
+	DAL	ListaPersonaDAL	
+				+ static List<Persona> ObtienePersonaDAL()
+
+	BL	ListaPersonaBL
+				+ static List<Persona> ObtienePersonaBL()
+
+Maui	VM
+		
