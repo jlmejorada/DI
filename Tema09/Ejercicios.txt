@@ -18,3 +18,130 @@ MODELS	ENT	Persona
 
 Maui	VM
 		
+
+
+EJ2 .- Una vista que permita seleccionar un departamento y mostrar las personas que pertenecen a él, además se debe informar del número de personas que lo componen.
+MODELS	ENT	Persona	
+			+ int ID { get; }
+			+ String Nombre { get; set; }
+			+ String Apellidos { get; set; }
+
+			+ Persona()
+			+ Persona(Nombre, Apellidos)
+
+		Departamento	
+			+ int ID { get; }
+			+ String Nombre { get; set; }
+			+ List<Persona> miembrosDepartamento
+
+			+ Departamento()
+			+ Persona(Nombre, Apellidos, List<persona>)
+
+
+	DAL	ListaPersonaDAL	
+				+ static List<Persona> ObtienePersonaDAL()
+
+		ListaDepartamentoDAL	
+				+ static List<Departamento> ObtieneDepartamentoDAL()
+
+
+	BL	ListaPersonaBL
+				+ static List<Persona> ObtienePersonaBL()	
+	
+		ListaDepartamentoDAL	
+				+ static List<Departamento> ObtieneDepartamentoBL()
+
+
+Maui	VM
+
+		ListaDepartamentoVM
+				+ static List<Departamento> ListadepMV { get; }
+				
+				+ ListadepMV()
+				
+				+ ListadepMV(int dept)
+
+
+		ListaPersonaVM
+				+ static List<Persona> ListaperMV { get; }
+				
+				+ ListaperMV()
+
+
+
+
+EJ3 .- Una en la que aparezca un listado de marcas de coche, y que cuando se seleccione una, me rellene otra lista con modelos de esa marca.
+MODELS	ENT	Marca	
+			+ int ID { get; }
+			+ String Nombre { get; set; }
+
+			+ Marca()
+			+ Marca(Nombre)
+
+		Modelo: Marca??
+			+ int ID { get; }
+			+ String Nombre { get; set; }
+
+			+ Modelo()
+			+ Modelo(Nombre)
+
+
+	DAL	ListaMarcaDAL	
+				+ static List<Marca> ObtieneMarcaDAL()
+
+		ListaModeloDAL	
+				+ static List<Modelo> ObtieneModeloDAL()
+
+
+	BL	ListaMarcaBL
+				+ static List<Marca> ObtieneMarcaBL()	
+	
+		ListaModeloDAL	
+				+ static List<Modelo> ObtieneModeloBL()
+
+
+Maui	VM
+
+		ListaMarcaVM
+				+ static List<Marca> ListamarMV { get; }
+				
+				+ ListamarMV()
+				
+				+ ListamarMV(int marc)
+
+
+		ListaModeloVM
+				+ static List<Modelo> ListmodMV { get; }
+				
+				+ ListmodMV()
+		
+
+EJ4 .- Una vista que muestre el tiempo que va a hacer hoy y los siguientes 6 días. Cuando el usuario pulse en un día en concreto, en la parte izquierda aparecerán más detalles sobre el tiempo que hará ese día.
+MODELS	ENT	Dia	
+			+ int ID { get; }
+			+ String Nombre { get; set; }
+			+ String Temperatura { get; set; }
+			+ DateTime Tiempo { get; set; }
+
+			+ Dia()
+			+ Dia(Nombre, Temperatura, Tiempo)
+
+
+	DAL	ListaDiaDAL	
+				+ static List<Dia> ObtieneDiaDAL()
+
+	BL	ListaDiaBL
+				+ static List<Dia> ObtieneDiaBL()
+
+
+Maui	VM
+		ListaDiaVM
+				+ static List<Dia> ListaDiaMV { get; }
+				
+				+ ListaDiaMV()
+				
+				+ ListaDiaMV(int diiita)
+
+
+EJ5 .- Una vista que permita jugar una partida de cuatro en raya contra la máquina. El tablero se puede realizar con un CollectionView.
+
