@@ -17,7 +17,13 @@ MODELS	ENT	Persona
 				+ static List<Persona> ObtienePersonaBL()
 
 Maui	VM
-		
+		ListadoPersonasVM
+				+ static List<PersonaConCheck> ObtienePersonaVM()
+				
+				+ PersonaConCheck: Persona
+					+ bool esMayorEdad { get <- calculaMayoriaEdad()}
+					+ PersonaConCheck()
+					+ PersonaConCheck(esMayorEdad): base
 
 
 EJ2 .- Una vista que permita seleccionar un departamento y mostrar las personas que pertenecen a él, además se debe informar del número de personas que lo componen.

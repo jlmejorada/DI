@@ -1,0 +1,29 @@
+Entidades
+	Persona:	- int id { ;get }
+				- String nombre { ;get ;set }
+				- String apellidos { ;get ;set }
+				- fecha fechaNacimiento { ;get ;set }
+				- String foto { ;get ;set }
+				- String direccion { ;get ;set }
+				- int telefono { ;get ;set }
+
+				+ Persona ()
+				+ Persona (int id, String nombre, String apellidos, fecha fechaNacimiento, String foto, String direccion, int telefono)
+
+
+DAL
+	PersonaDAL: + List<Persona> sacarDatosDAL()
+				+ Persona buscaPorIdDAL()
+				+ Persona buscaPorNombreDAL()
+				+ void eliminaPersonaDAL()
+
+
+BL
+	PersonaBL:	+ List<Persona> sacarDatosBL()
+				+ Persona buscaPorIdBL()
+				+ Persona buscaPorNombreBL()
+				+ void eliminaPersonaBL()
+
+UI
+	MAUI:
+			VM:	
